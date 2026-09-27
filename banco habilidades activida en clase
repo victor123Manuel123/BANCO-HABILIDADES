@@ -1,0 +1,281 @@
+##catalogo html 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catalogo</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="Registros.html">Inicio de sesion/crear una cuenta</a>
+
+<p>
+    Alternativa de ingresos autónomos y tarifas comunitarias justas para mujeres y jóvenes profesionales
+</p>
+<h2>Habilidades por Categoría</h2>
+<form>
+    <input type="submit" value="Confección y Textil">
+    <input type="submit" value="Tutorías y Educación">
+    <input type="submit" value="Soporte Técnico / Diseño">
+    <input type="submit" value="Servicios para el Hogar">
+</form>
+</body>
+</html>
+
+
+##creacion de cuentas html 
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Crear Cuenta - Banco de Habilidades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <p><a href="index.html">← Volver al inicio</a></p>
+
+    <h2>Crear una Cuenta Nueva</h2>
+    <p>Súmate a nuestra red de crecimiento</p>
+
+    
+    <form>
+        
+        <h3>1. Datos Personales</h3>
+        <p>
+            Nombre completo:
+            <input type="text" required>
+        </p>
+
+        <p>
+            Numero de telefono:
+            <input type="tel" minlength="10" maxlength="10" required>
+        </p>
+
+        <p>
+            Correo electronico:
+            <input type="email" required>
+        </p>
+
+        
+        <h3>2. Tu Perfil Profesional</h3>
+        <p>
+        ¿Cuál es tu categoría principal?
+            <select id="categoria" name="categoria" required>
+                <option value="">-- Selecciona una opción --</option>
+                <option value="textil">Confección y Textil</option>
+                <option value="educacion">Tutorías y Educación</option>
+                <option value="tecnologia">Tecnología y Diseño</option>
+                <option value="hogar">Servicios para el Hogar</option>
+                <option value="otro">Otra habilidad</option>
+            </select>
+        </p>
+
+        <p>
+            
+            Describe brevemente lo que sabes hacer:
+        <input type="text">
+        </p>
+
+    
+        <h3>3. Seguridad</h3>
+        <p>
+            Crea una contraseña:
+            <input type="password" minlength="8" placeholder="Minimo 8 caracteres" required>
+        </p>
+
+        <!-- Aceptación de términos cooperativos -->
+        <p>
+            <input type="checkbox" id="terminos" required>
+            Acepta terminos y condiciones
+        </p>
+
+        
+        <p>
+            <input type="submit" value="Registrarme y Crear Perfil">
+        </p>
+    </form>
+
+    <hr>
+
+    <p>
+        ¿Ya tienes una cuenta activa? <a href="registros.html">Inicia sesión aquí</a>
+    </p>
+
+</body>
+</html>
+
+
+
+##index ##
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Organizacion de empoderamiento e impulso </title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Organizacion de empoderamiento e impulso</h1>
+    <h2>Somos tu mejor aliado en mejorar tus capacidades</h2>
+        <h3>¿Quienes somos?</h3>         
+        <p>
+            Somos una comunidad y plataforma dedicada a transformar la vida de mujeres y adolescentes a través del desarrollo de sus talentos. Creamos un banco de habilidades donde conectamos el conocimiento, la capacitación y las oportunidades prácticas. Nuestro objetivo es brindarte las herramientas herramientas emocionales, técnicas y financieras necesarias para que te conviertas en la dueña de tu propio destino e impulses tu futuro.
+        </p>
+
+    <a href="catalogo.html">Ingresa a nuestro catalogo</a>
+
+</body>
+</html>
+
+
+
+##registros html ##
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <p><a href="index.html">← Volver al inicio</a></p>
+
+    <h2>Iniciar Sesion</h2>
+    <p>Ingresa tus datos para acceder al Banco de Habilidades</p>
+
+
+    <form>
+        
+        <p>
+            Corre electronico:
+            <input type="email">
+        </p>
+
+    
+        <p>
+        Contraseña:
+            <input type="password" minelength="8" required>
+        </p>
+
+        
+        <p>
+            <input type="checkbox" id="recordar">
+            Recordar mis datos
+        </p>
+
+        
+        <p>
+            <input type="submit" value="Ingresar">
+        </p>
+    </form>
+
+    <p>
+        ¿No tienes cuenta? <a href="creacionCuentas.html">Registrate aqui</a>
+    </p>
+
+</body>
+</html>
+
+
+
+##STYLE CSS##
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+
+h1, h2, h3 {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+form {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: skyblue; 
+}
+
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+hr {
+    border: 0;
+    border-top: 1px solid white;
+    margin: 20px 0;
+}
+
